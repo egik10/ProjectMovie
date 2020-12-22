@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    <color name="colorPrimary">#6200EE</color>-->
+    <!--    <color name="colorPrimaryDark">#3700B3</color>-->
+    <!--    <color name="colorAccent">#03DAC5</color>-->
+    <color name="colorPrimary">#0D253F</color>
+    <color name="colorPrimaryDark">#01B4E4</color>
+    <color name="colorAccent">#90CEA1</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrey">#696969</color>
+    <color name="colorLightGrey">#D3D3D3</color>
+
+    <color name="colorGold">#FFD700</color>
+
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorSemiTransparent">#99FFFFFF</color>
+
+    <color name="colorTMDBPrimary">#0D253F</color>
+    <color name="colorTMDBSecondary">#01B4E4</color>
+    <color name="colorTMDBTertiary">#90CEA1</color>
+
+    <color name="colorTMDbNotRated">#666666</color>
+    <color name="colorTMDbNegative">#DB2360</color>
+    <color name="colorTMDbMixed">#D2D531</color>
+    <color name="colorTMDbPositive">#21D07A</color>
+</resources>

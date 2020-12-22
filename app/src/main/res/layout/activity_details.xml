@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/abl_details_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTMDBPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imgbtn_details_back"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/colorTransparent"
+                android:contentDescription="@string/back_button"
+                android:padding="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/tv_details_appname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/imgbtn_details_markasfavorite"
+                android:layout_toEndOf="@id/imgbtn_details_back"
+                android:maxLines="1"
+                android:padding="24dp"
+                android:text="@string/project_movie"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_details_markasfavorite"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/colorTransparent"
+                android:contentDescription="@string/mark_as_favorite"
+                android:padding="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_star_border"
+                android:tint="@color/colorGold" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/abl_details_appbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_details_backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@color/colorLightGrey"
+                android:contentDescription="@string/movie_backdrop_image"
+                android:scaleType="fitStart"
+                tools:src="@drawable/img_backdrop_ironman" />
+
+            <ImageView
+                android:id="@+id/img_details_movieposter"
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="128dp"
+                android:background="@color/colorLightGrey"
+                android:contentDescription="@string/movie_poster_image"
+                tools:src="@drawable/img_poster_ironman" />
+
+            <LinearLayout
+                android:id="@+id/ll_details_avguserscorecontainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_details_backdrop"
+                android:layout_toEndOf="@id/img_details_movieposter"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_details_literalaveragescore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/average_user_score"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                    <TextView
+                        android:id="@+id/tv_details_avguserscore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:textSize="28sp"
+                        tools:text="7.6"
+                        tools:textColor="@color/colorTMDbPositive" />
+
+                    <TextView
+                        android:id="@+id/tv_details_outoften"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/out_of_10"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_details_usercount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    tools:text="voted by 19534 users" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_details_movieposter"
+                android:layout_margin="24dp">
+
+                <TextView
+                    android:id="@+id/tv_details_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="Iron Man" />
+
+                <TextView
+                    android:id="@+id/tv_details_releasedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_details_name"
+                    android:textSize="22sp"
+                    tools:text="30 April 2008" />
+
+                <ImageView
+                    android:id="@+id/img_details_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/tv_details_releasedate"
+                    android:layout_marginTop="24dp"
+                    android:background="@color/colorLightGrey"
+                    android:contentDescription="@string/divider_line" />
+
+                <TextView
+                    android:id="@+id/tv_details_overview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_details_divider"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:justificationMode="inter_word"
+                    android:textSize="20sp"
+                    tools:targetApi="o"
+                    tools:text="After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil." />
+
+                <ImageView
+                    android:id="@+id/img_details_tmdb"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_details_overview"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:contentDescription="@string/tmdb_logo"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_tmdb_alt_short" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

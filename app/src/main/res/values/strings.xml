@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Project Movie</string>
+    <string name="favorites">Favorites</string>
+    <string name="movies">Movies</string>
+    <string name="press_back_again_to_exit">Press \'back\' again to exit</string>
+    <string name="project_movie">Project Movie</string>
+    <string name="powered_by">Powered by</string>
+    <string name="movie_poster_image">Movie Poster Image</string>
+    <string name="popular_right_now">Popular Right Now</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="feature_coming_soon">Feature Coming Soon</string>
+    <string name="my_favorite_movies">My Favorite Movies</string>
+    <string name="tmdb_logo">TMDB Logo</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="no_internet_connection_message">The requested data cannot be downloaded. Make sure you are connected to an active internet connection.</string>
+    <string name="try_again">Try Again</string>
+    <string name="divider_line">Divider Line</string>
+    <string name="unknown">Unknown</string>
+    <string name="marcellinus_gergie_mulya">Marcellinus Gergie Mulya</string>
+    <string name="application_creator">Application Creator</string>
+    <string name="nim">09031381823096</string>
+    <string name="back_button">Back Button</string>
+    <string name="application_information">Application Information</string>
+    <string name="no_movies_message">Uh oh…\nYou don\'t have any favorite movies :(\nStart adding from the movies tab!</string>
+    <string name="movie_backdrop_image">Movie Backdrop Image</string>
+    <string name="mark_as_favorite">Mark as Favorite</string>
+    <string name="no_overview_provided">No overview provided.</string>
+    <string name="added_to_favorites">Movie added to My Favorite Movies</string>
+    <string name="removed_from_favorites">Movie removed from My Favorite Movies</string>
+    <string name="out_of_10">out of 10</string>
+    <string name="average_user_score">Average User Score</string>
+    <string name="search_for_a_movie">Search for a movie…</string>
+    <string name="no_result_found">No result found.</string>
+</resources>
